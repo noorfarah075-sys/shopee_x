@@ -11,14 +11,14 @@ import 'package:shopee_x/core/resources/height_manager.dart';
 import 'package:shopee_x/core/resources/route_manager.dart';
 import 'package:shopee_x/core/resources/utils.dart';
 
-class OnBourdingPage extends StatefulWidget {
-  const OnBourdingPage({super.key});
+class OnBourdingScreen extends StatefulWidget {
+  const OnBourdingScreen({super.key});
 
   @override
-  State<OnBourdingPage> createState() => _OnbourdingState();
+  State<OnBourdingScreen> createState() => _OnbourdingState();
 }
 
-class _OnbourdingState extends State<OnBourdingPage> {
+class _OnbourdingState extends State<OnBourdingScreen> {
   late OnbourdingPagesController _controller;
   late PageController _pageController;
 

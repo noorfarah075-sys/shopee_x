@@ -1,8 +1,10 @@
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 
-class FontsManagers{
-  static const String poppins="poppins";
-  static const String roboto="roboto";
+class FontsManagers {
+  static const String cairo = "Cairo";
+  static const String poppins = "Cairo";
+  static const String roboto = "Cairo";
+
   FontsManagers._();
 }
 

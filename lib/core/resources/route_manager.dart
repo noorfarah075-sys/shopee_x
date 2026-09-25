@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:shopee_x/core/widget/un_known_page.dart';
-import 'package:shopee_x/view/login/screen/login_page.dart';
-import 'package:shopee_x/view/onbourding/screen/on_bourding_page.dart';
-import 'package:shopee_x/view/splash/screen/splach_page.dart';
+import 'package:shopee_x/view/login/screen/login_screen.dart';
+import 'package:shopee_x/view/onbourding/screen/on_bourding_screen.dart';
+import 'package:shopee_x/view/splash/screen/splash_screen.dart';
 
 class RoutesManager {
   static Route<dynamic>? onGenerateRoute(RouteSettings settings) {
     Widget screen;
     String? name = settings.name;
-    if (name == RouteName.splach.routeName) {
-      screen = const SplachPage();
+    if (name == RouteName.splash.routeName) {
+      screen = const SplashScreen();
     } else if (name == RouteName.onbourding.routeName) {
-      screen = const OnBourdingPage();
+      screen = const OnBourdingScreen();
     } else if (name == RouteName.login.routeName) {
-      screen = const LoginPage();
+      screen = const LoginScreen();
     } else {
       screen = UnknownRouteScreen(route: settings.name ?? "");
     }
@@ -22,7 +22,7 @@ class RoutesManager {
 }
 
 enum RouteName {
-  splach("/"),
+  splash("/"),
   onbourding("/onbourding"),
   login("/login");
 

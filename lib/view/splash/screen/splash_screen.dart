@@ -10,14 +10,14 @@ import 'package:shopee_x/core/resources/radius_manager.dart';
 import 'package:shopee_x/core/resources/utils.dart';
 import 'package:shopee_x/view/splash/widget/main_press_button.dart';
 
-class SplachPage extends StatefulWidget {
-  const SplachPage({super.key});
+class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
 
   @override
-  State<SplachPage> createState() => _SplachScreenState();
+  State<SplashScreen> createState() => _SplachScreenState();
 }
 
-class _SplachScreenState extends State<SplachPage> {
+class _SplachScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
